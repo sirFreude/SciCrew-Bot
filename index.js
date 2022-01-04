@@ -10,18 +10,18 @@ const client = new DiscordJS.Client({
   })
 
 client.on('ready', () => {
-  console.log('The bot is ready!')
+  console.log('help.SciBot is ready')
 })
 client.on('messageCreate', (msg) => {
   if (msg.content === 'help.SciBot') {
     msg.reply({
-      content: '**SciBot Commands:** \n\n*help.SciBot:* will display this message. \n*info.SciBot:* will display information about the Minecraft Server and this Discord Bot. \n*coordinates:* will display coordinates of some areas.',
+      content: '**SciBot Commands:** \n\n*help.SciBot:* will display this message. \n*info.SciBot:* will display information about the Minecraft Server and this Discord Bot. \n*coordinates.SciBot:* will display coordinates of some areas.',
     })
   }
 })
 
 client.on('ready', () => {
-  console.log('The bot is ready!')
+  console.log('coordinates.SciBot is ready')
 })
 client.on('messageCreate', (msg) => {
   if (msg.content === 'coordinates.SciBot') {
@@ -32,7 +32,7 @@ client.on('messageCreate', (msg) => {
 })
 
 client.on('ready', () => {
-  console.log('The bot is ready!')
+  console.log('server.SciBot is ready')
 })
 client.on('messageCreate', (msg) => {
   if (msg.content === 'server.SciBot') {
